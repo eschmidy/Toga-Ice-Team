@@ -1,3 +1,5 @@
+#include <iostream>
+#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -85,10 +87,9 @@ void loop() {
         return snow;
     }
     if (snow == true and newsnow == false){
-          delay(18000000);
+          sleep(18000000);
           digitalWrite(in1, LOW);
           bool snow = false;
           return snow;
     }
  }
-  
